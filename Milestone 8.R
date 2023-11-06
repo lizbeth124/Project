@@ -1,0 +1,6 @@
+View(rank)
+rank.lm <- lm(`No of student` ~ `No of student per staff` , data = rank)
+summary(rank.lm)
+plot(rank$`No of student`, rank$`No of student per staff`, xlab = "Number of Students", ylab = "Number of Students per Staff", main = "World University Ranks Data for Number of Students vs Number of Students Per Staff")
+abline(rank.lm, col = "red")
+hist(resid(rank.lm), xlab = "Residuals", ylab = "Frequency", main = "Residuals for Number of Students ~ Number of Students per Staff")
