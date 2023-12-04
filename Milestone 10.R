@@ -1,0 +1,7 @@
+View(rank)
+rank$`International Student`<- as.numeric(gsub("[\\%]", "", rank$`International Student`))
+hist(rank$`International Student`, xlab = "Percentage of International Students", main = "Histogram of Percentage of International Students")
+mean(rank$`International Student`, na.rm = TRUE)
+median(rank$`International Student`, na.rm = TRUE)
+var(rank$`International Student`, na.rm = TRUE)
+sd(rank$`International Student`, na.rm = TRUE)
